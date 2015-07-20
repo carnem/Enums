@@ -14,4 +14,9 @@ public enum Direction
         this.dx = dx;
         this.dy = dy;
     }
+    
+    public boolean isOpposite(Direction dir)
+    {
+        return (this.dx + dir.dx == 0 && this.dy + dir.dy == 0);
+    }
 }
